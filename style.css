@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Undounded";
+    src: url("../tecboard/fonts/Unbounded-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../tecboard/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    color: red; - cor nomeada
+    color: #ff0000; - cor hexadecimal - mais usada  
+    color: rgb(255, 0, 0) - cor rgb
+    */
+
+
+body {
+    background-color: #0E1014;
+    /*definir cor de fundo do site*/
+    color: #FFFFFF;
+}
+
+/* - Outras formas de definir a cor 
+
+h1, p, a{
+    color: #FFFFFF;
+}
+
+cria uma classe'.' e coloca essa classe no elemento
+podendo criar um conjunto de elementos a partir de uma classe
+.cor-branca{
+    color: #FFFFFF;
+}
+    <h1 class="cor-branca"><h1>
+    */
+
+header img {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 24px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    width: 792px;
+    margin: 0 auto;
+}
+
+span {
+    color: #9747FF;
+}
+
+/* caso haja mais de um span e queira aplicar cores diferentes
+declara uma hierarquia e especifica mais onde está o span
+ex: h1 span ou p span*/
+
+
+a {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    /*transforma o botão em bloco*/
+    text-align: center;
+    /*centraliza horizontal*/
+    line-height: 66px;
+    /*centraliza vertical*/
+    border-radius: 36px;
+    /*arredonda a borda*/
+    /*para centralizar um elemento de bloco é preciso usar as margens*/
+    margin: 40px auto;
+
+    /*outra forma de centralizar o botão
+    margin: 100px 790px 10px 790px;*/
+
+    /*outra forma de centralizar o botaõ
+    margin-top: 100px;
+    margin-right: 790px;
+    margin-bottom: 10px;
+    margin-left: 790px;*/
+
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0px auto;
+}
+
+@media(max-width:768px) {
+
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+
+
+}
+
+@media(max-width:475px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 340px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
